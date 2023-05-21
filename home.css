@@ -1,0 +1,367 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: meno banner;
+  font-weight: normal;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+  border: 1px solid #ffaef7;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+td.separator {
+  border-left: 1px solid #dcb6ff ;
+  border-right: 1px solid #dcb6ff;
+  width: 10px;
+}
+
+td.column {
+  padding: 0;
+  text-align: center;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-top: 2%;
+}
+
+.header h1 {
+  margin-bottom: 0;
+  margin-left: 10.5%;
+  font-weight: normal;
+  font-size: 8em;
+  transition: all 0.3s ease-in-out;
+}
+
+.header h2 {
+  margin-top: 0;
+  margin-left: 30.5%;
+  font-weight: normal;
+  font-size: 5em;
+  transition: all 0.3s ease-in-out;
+}
+
+.navi-icons {
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border-top: 1px solid rgb(11, 231, 231);
+  border-bottom: 1px solid rgb(11, 231, 231) ;
+}
+
+.navi-icons ul.button {
+  list-style-type: none;
+  display: table;
+  width: 80%;
+  table-layout: fixed;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navi-icons li {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button {
+  font-size: 2em;
+}
+
+a {
+  cursor: pointer;
+}
+
+.navi-icons a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.navi-icons a:hover {
+color: #698c7d;
+cursor: pointer;
+}
+
+.navi-icons a:active {
+text-decoration: none;
+cursor: pointer;
+}
+
+.navi-icons a:focus {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.line1 {
+  border: none;
+  border-top: 1px solid rgb(11, 231, 231);
+  margin-top: -200px;
+}
+
+.line2 {
+  border: none;
+  border-top: 1px solid rgb(11, 231, 231);
+  margin-top: 111px;
+}
+
+.contact {
+  position: relative;
+  top: 25%;
+  left:40%;
+  padding-bottom: 0.5%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  border-top: 1px solid rgb(11, 231, 231);
+  border-bottom: 1px solid rgb(11, 231, 231) ;
+}
+
+.contact h2 {
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.contact ul {
+  list-style-type: none;
+  display: table;
+  width: 50%;
+  table-layout: fixed;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contact li {
+  display: table-cell;
+  text-align: center;
+  left: 20%;
+}
+
+.contact h4, p {
+  line-height: 0.3;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.contact a:hover {
+  color: #698c7d;
+  cursor: pointer;
+  }
+  
+.contact a:active {
+  text-decoration: none;
+  cursor: pointer;
+  }
+  
+.contact a:focus {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.link {
+    font-style: italic;
+  }
+
+
+@media only screen and (max-width: 1000px) {
+
+  body {
+    height: 120%;
+  }
+
+  table {
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+  }
+  
+  td.separator {
+    border-left: 1px solid #dcb6ff ;
+    border-right: 1px solid #dcb6ff;
+    width: 10px;
+  }
+  
+  td.column {
+    padding: 0;
+    text-align: center;
+  }
+
+  .header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+  }
+
+  .header h1 {
+    margin-right: 10%;
+    font-weight: normal;
+    font-size: 3.7em;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #0be7e7;
+  }
+
+  .line1 {
+    display: none;
+  }
+
+  .header h2 {
+    margin-top: 3%;
+    margin-left: 0;
+    font-weight: normal;
+    font-size: 1.7em;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #0be7e7;
+  }
+
+  .line2 {
+    display: none;
+  }
+
+  .navi-icons {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-top: 0px solid rgb(11, 231, 231);
+    border-bottom: 0px solid rgb(11, 231, 231) ;
+  }
+
+  .navi-icons ul.button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    position: relative;
+    bottom: 0px;
+  }
+  
+  .navi-icons ul.button li {
+    position: relative;
+  }
+  
+  .navi-icons ul.button::before {
+    display: none;
+  }
+  
+  .navi-icons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navi-icons ul.button li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #0be7e7;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+
+  .button {
+    font-size: 2.3em;
+  }
+
+  td.separator {
+    display: none;
+  }
+
+  td.column:nth-child(2) {
+    display: none;
+  }
+
+  .contact {
+    position: relative;
+    top: 33%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border-top: 0px;
+    border-bottom: 0px solid rgb(11, 231, 231) ;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }  
+
+  .contact h3 {
+    line-height: 0;
+    margin-bottom: 2%;
+  }
+
+  .contact h4 {
+    font-size: 1.5em;
+  }
+
+  .contact-list ul.button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    border-bottom: none;
+  }
+  
+  .contact-list ul.button li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .contact-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(11, 231, 231) ;
+  }
+
+  .contact-list li:last-child {
+    margin-bottom: 0;
+  }
+}
