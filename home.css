@@ -195,7 +195,7 @@ cursor: pointer;
   }
 
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 
   body {
     height: 120%;
@@ -231,7 +231,7 @@ cursor: pointer;
   .header h1 {
     margin-right: 10%;
     font-weight: normal;
-    font-size: 3.7em;
+    font-size: 4.7em;
     text-align: center;
     transition: all 0.3s ease-in-out;
     border-bottom: 1px solid #0be7e7;
@@ -244,7 +244,6 @@ cursor: pointer;
   .header h2 {
     margin-top: 3%;
     margin-left: 0;
-    font-weight: normal;
     font-size: 1.7em;
     text-align: center;
     transition: all 0.3s ease-in-out;
@@ -364,5 +363,177 @@ cursor: pointer;
 
   .contact-list li:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio:2) {
+
+  body {
+    height: 100%;
+  }
+
+  table {
+    width: 80%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    border: 3px solid #ffaef7;
+  }
+  
+  td.column {
+    padding: 0;
+    text-align: center;
+  }
+
+  .header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .header h1 {
+    margin-right: 10%;
+    font-weight: normal;
+    font-size: 6.7em;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid #0be7e7;
+  }
+
+  .line1 {
+    display: none;
+  }
+
+  .header h2 {
+    margin-top: 3%;
+    margin-left: 0;
+    font-size: 2.7em;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid #0be7e7;
+  }
+
+  .line2 {
+    display: none;
+  }
+
+  .navi-icons {
+    position: relative;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-top: 0px solid rgb(11, 231, 231);
+    border-bottom: 0px solid rgb(11, 231, 231) ;
+  }
+
+  .navi-icons ul.button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    position: relative;
+    bottom: 0px;
+  }
+  
+  .navi-icons ul.button li {
+    position: relative;
+  }
+  
+  .navi-icons ul.button::before {
+    display: none;
+  }
+  
+  .navi-icons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navi-icons ul.button li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #0be7e7;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+
+  .button {
+    font-size: 4.3em;
+  }
+
+  td.separator {
+    display: none;
+  }
+
+  td.column:nth-child(2) {
+    display: none;
+  }
+
+  .contact {
+    position: relative;
+    top: 38%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border-top: 0px;
+    border-bottom: 0px solid rgb(11, 231, 231) ;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }  
+
+  .contact h3 {
+    line-height: 0;
+    margin-bottom: 2%;
+    font-size: 2em;
+  }
+
+  .contact h4 {
+    font-size: 2.5em;
+  }
+
+  .contact-list ul.button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    border-bottom: none;
+  }
+  
+  .contact-list ul.button li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .contact-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(11, 231, 231) ;
+  }
+
+  .contact-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .link {
+    font-style: italic;
+    font-size: 2em;
   }
 }
