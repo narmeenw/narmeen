@@ -255,13 +255,12 @@ cursor: pointer;
   }
 
   .navi-icons {
-    position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    border-top: 0px solid rgb(11, 231, 231);
-    border-bottom: 0px solid rgb(11, 231, 231) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: normal;
+    padding-right: 2%; ;
   }
 
   .navi-icons ul.button {
