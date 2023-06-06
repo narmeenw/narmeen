@@ -60,7 +60,7 @@ a {
   margin-bottom: -1%;
 }
 
-nav {
+.navi-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,8 +200,8 @@ a.navi-photo {
 
   table {
     width: 90%;
-    height: 680%;
-    top: 346.5%;
+    height: 60%;
+    top: 35.5%;
     left: 50%;
   }
 
@@ -225,7 +225,7 @@ a.navi-photo {
     width: 100%;
   }
 
-  nav {
+  .navi-icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +266,7 @@ a.navi-photo {
   .main-content {
     gap: 30px;
     padding-left: 0;
-    padding-top: 30%;
+    padding-top: 35%;
   }
 
   .h4-grid h4 {
