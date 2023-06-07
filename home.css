@@ -194,6 +194,19 @@ cursor: pointer;
     font-style: italic;
   }
 
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #0be7e7;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
 
 @media (max-width: 1000px) {
 
@@ -358,7 +371,7 @@ cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgb(11, 231, 231) ;
+    border-bottom: 1px solid #0be7e7 ;
   }
 
   .contact-list li:last-child {

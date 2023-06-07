@@ -19,11 +19,11 @@
     border: 1px solid #ffaef7;
     position: absolute;
     width: 88%;
-    height: 110%;
+    height: 70%;
     pointer-events: none;
     z-index: -1;
     position: absolute;
-    top: 74%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -179,7 +179,6 @@
   .gallery-item:hover::after {
     opacity: 1;
   }
-  
 
   
   @media (max-width: 1000px) {

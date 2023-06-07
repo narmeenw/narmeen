@@ -111,10 +111,34 @@
     padding-left: 7%;
   }
 
+  .main-content h1 {
+    margin-left: 3%;
+}
+
   .main-content h2 {
     font-style: italic;
+    margin-left: 3%;
+  }
+
+  .main-content p {
+    margin-left:3%;
+  }
+
+  .main-content h3 {
+    margin-left:3%;
+  }
+
+  .main-content h4 {
+    margin-left:3%;
   }
   
+  .information video {
+    width: 99%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+  }
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -138,7 +162,6 @@
   .information {
     width: 30%;
   }
-
   
   @media (max-width: 1000px) {
   
