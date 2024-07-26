@@ -30,7 +30,7 @@
   td.separator {
     border-left: 1px solid #dcb6ff ;
     border-right: 1px solid #dcb6ff;
-    width: 10px;
+    width: 17px;
   }
   
   td.column {
@@ -132,6 +132,10 @@
     margin-left:3%;
   }
   
+  .information {
+    margin-left:-0.5%;
+  }
+
   .information video {
     width: 99%;
     align-items: center;
@@ -168,6 +172,7 @@
     margin-left: 3%;
     margin-top: 4%;
   }
+
   
   @media (max-width: 1000px) {
   
@@ -268,5 +273,4 @@
       }
   
   }
-  
  

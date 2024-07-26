@@ -4,6 +4,43 @@
     <title>NarmeenW</title>
     <link rel="stylesheet" href="graphicprojects.css">
     <link rel="stylesheet" href="https://use.typekit.net/mri0kfo.css">
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            position: relative;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-30%, -80%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .play-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+  </style>
   </head>
   <body>
   <table>
@@ -31,19 +68,30 @@
     <main class="main-content">
         <div class="information">
             <h1>ABSee</h1>
-            <h2>Student Project</h2>
-            <br>
-            <video src="design/casevideo.mp4" autoplay loop></video>
-            <br>
+            <h2>Student Project, 2020</h2>
             <br>
             <p>Due to fast fashion, clothes are thrown away faster leading to each person wasting atleast 35kg of textiles per year. This causes waste accumulation and pollution. I created card game sets for children as a design solution to this problem. This card game allows children to learn the alphabet through an app that interacts with the product using the Osmo System.
             </p>
             <br>
             <p>We had to choose a brand that could sponsor this idea as part of the project, and I chose to use Fox Kids & Baby because they are a popular brand in Singapore and they are working towards being more sustainable and do already have a drop-off point for old clothes. To elevate the project, I chose to create a hypothetical collaboration between Fox Kids & Baby and Osmo to create this game.</p>
+            <br>
+            <br>
+            <div class="video-container">
+              <video id="caseVideo" src="design/casevideo.mp4" controls></video>
+              <button class="play-button" onclick="togglePlayPause()">&#9658;</button>
+              <h3>Case Video</h3>
+              <p>Watch to find out more about this project</p>
+          </div>
+          <br>
+            <img src="design/ab5.jpg">
+            <h3>Wireframe</h3>
+          <br>
+            <img src="design/ab6.jpg">
+            <h3>Guerilla Marketing Campaign</h3>
+            <p>This would be an interactive game that could be placed around playgrounds or bus stops to promote the game and app. The user would have to use the touch screen to move the picture cards to the top based on the letter that shows up on the screen.</p>
         </div>
         <div class="gallery">
             <div class="gallery-item" id="item1">
-                <a href="absee.html">
                 <img src="design/ab1.jpg" alt="Image 1">
                 </a>
               </div>
@@ -64,5 +112,31 @@
     <br>
     <br>
     <br>
+    <script>
+      var video = document.getElementById("caseVideo");
+      var button = document.querySelector(".play-button");
+
+      function togglePlayPause() {
+          if (video.paused) {
+              video.play();
+              button.style.display = "none";
+          } else {
+              video.pause();
+              button.style.display = "flex";
+          }
+      }
+
+      video.addEventListener("play", function() {
+          button.style.display = "none";
+      });
+
+      video.addEventListener("pause", function() {
+          button.style.display = "flex";
+      });
+
+      video.addEventListener("ended", function() {
+          button.style.display = "flex";
+      });
+  </script>
   </body>
 </html>

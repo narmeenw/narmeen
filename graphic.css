@@ -152,35 +152,42 @@
   }
   
   #item4 .hover-image {
-    background-image: url(design/tf2.jpg);
-  }
-  
-  #item5 .hover-image {
     background-image: url(design/sph2.jpg);
   }
   
-  #item6 .hover-image {
-    background-image: url(design/hb2.jpg);
-  }
-  
-  #item7 .hover-image {
+  #item5 .hover-image {
     background-image: url(design/bt2.jpg);
   }
   
-  #item8 .hover-image {
-    background-image: url(design/sb2.jpg);
-  }
-  
-  #item9 .hover-image {
+  #item6 .hover-image {
     background-image: url(design/ab2.jpg);
   }
-  
   
   .gallery-item:hover::after {
     opacity: 1;
   }
 
-  
+  .gallery-item .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .gallery-item:hover .text-overlay {
+    opacity: 1;
+  }
+
   @media (max-width: 1000px) {
   
     body {
