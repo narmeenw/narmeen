@@ -152,15 +152,27 @@
   }
   
   #item4 .hover-image {
-    background-image: url(design/sph2.jpg);
+    background-image: url(design/ab2.jpg);
   }
   
   #item5 .hover-image {
-    background-image: url(design/bt2.jpg);
+    background-image: url(design/c6.jpg);
   }
   
   #item6 .hover-image {
-    background-image: url(design/ab2.jpg);
+    background-image: url(design/sph2.jpg);
+  }
+
+  #item7 .hover-image {
+    background-image: url(design/.jpg);
+  }
+
+  #item8 .hover-image {
+    background-image: url(design/.jpg);
+  }
+
+  #item9 .hover-image {
+    background-image: url(design/bt2.jpg);
   }
   
   .gallery-item:hover::after {
