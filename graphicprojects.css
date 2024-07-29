@@ -19,10 +19,10 @@
     border: 1px solid #ffaef7;
     position: absolute;
     width: 88%;
-    height: 290%;
+    height: 270%;
     pointer-events: none;
     z-index: -1;
-    top: 164%;
+    top: 153%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

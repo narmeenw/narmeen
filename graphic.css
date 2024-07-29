@@ -19,11 +19,11 @@
     border: 1px solid #ffaef7;
     position: absolute;
     width: 88%;
-    height: 110%;
+    height: 105%;
     pointer-events: none;
     z-index: -1;
     position: absolute;
-    top: 74%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
