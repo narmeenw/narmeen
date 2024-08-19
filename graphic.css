@@ -16,7 +16,6 @@
   table {
     border-collapse: collapse;
     background-color: transparent;
-    border: 1px solid #ffaef7;
     position: absolute;
     width: 88%;
     height: 105%;
@@ -29,8 +28,6 @@
   }
   
   td.separator {
-    border-left: 1px solid #dcb6ff ;
-    border-right: 1px solid #dcb6ff;
     width: 10px;
   }
   
