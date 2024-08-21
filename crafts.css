@@ -101,7 +101,7 @@ a.navi-photo {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
+  gap: 10px;
   padding-left: 5.7%;
   padding-right: 5.7%;
 }
