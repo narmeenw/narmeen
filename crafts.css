@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: meno banner;
+  font-weight: normal;
+  color: #000000;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-gap: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+  position: absolute;
+  width: 88%;
+  height: 130%;
+  pointer-events: none;
+  z-index: -1;
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+td.separator {
+  width: 10px;
+}
+
+td.column {
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-bottom: -5%;
+  font-size: 1.7em;
+  border-bottom: 1px solid rgb(11, 231, 231) ;
+}
+
+.header h1 {
+  font-weight: normal;
+  margin-bottom: -1%;
+}
+
+.navi-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: normal;
+  padding-right: 2%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navi-icons li {
+  padding-left: 40px;
+  padding-top: 2%;
+  margin-bottom: -2%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #698c7d;
+}
+
+a.navi-photo {
+  color: #698c7d;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat (3,1fr);
+  gap: 30px;
+  padding-left: 0;
+  padding-top: 2%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0px;
+  padding-left: 5.7%;
+  padding-right: 5.7%;
+}
+
+.gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 90%;
+  align-items: center;
+  height: auto;
+}
+
+.ba {
+  padding-left: 0.5%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    width: 90%;
+    height: 60%;
+    top: 35.5%;
+    left: 50%;
+  }
+
+  .header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36%;
+    border-bottom: 0px solid rgb(11, 231, 231) ;
+  }
+
+  .header h1 {
+    margin-right: 2.5%;
+    font-weight: normal;
+    font-size: 2.15em;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #0be7e7;
+    width: 100%;
+  }
+
+  .navi-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    margin-top:5%;
+  }
+  
+  ul {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  li {
+    width: 130%;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #0be7e7;
+  }
+
+  .navi-icons li {
+    padding-left: 0px;
+    padding-top: 3%;
+    margin-bottom: 0;
+  }
+  
+
+  td.separator {
+    display: none;
+  }
+  
+  .main-content {
+    gap: 30px;
+    padding-left: 0;
+    padding-top: 35%;
+  }
+
+  .h4-grid h4 {
+    font-size: 0.7em;
+  }
+
+  .h4-grid {
+    width: 90%;
+    margin-left: -3%;
+    padding-right: 3%;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    text-align: center;
+    padding-left: 5.7%;
+    padding-right: 5.7%;
+  }
+  
+  .gallery-item img {
+    width: 90%;
+    align-items: center;
+    height: auto;
+  }
+
+  .photo {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .photo h3 {
+    margin-top: 0;
+    margin-left: 0%;
+    margin-bottom: 2%;
+  }
+
+  .extra li {
+    margin-right: 0%;
+    text-align: center
+  }
+
+  .contact {
+    width: 46%;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 24%;
+    }
+  
+  .contact li {
+    margin-top: 0%;
+    text-align: center;
+  }
+  
+  .linkedin {
+    padding-left: 0%;
+    text-align: center
+  }
+  
+  .link {
+    font-style: italic;
+    font-size: 1.3em;
+    font-family: cormorant garamond;
+  }
+
+  .contact h3 {
+    margin-top: 6%;
+  }
+  
+  .contact h4 {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-family: cormorant garamond;
+    text-align: center;
+  }
+
+  .contact p {
+    margin-top: 1%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .ba {
+    padding-left: 0%;
+    text-align: center
+  }
+
+}
