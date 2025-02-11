@@ -49,7 +49,6 @@ a {
   padding-top: 3%;
   padding-bottom: -5%;
   font-size: 1.7em;
-  border-bottom: 1px solid rgb(11, 231, 231) ;
 }
 
 .header h1 {
@@ -61,7 +60,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: normal;
   padding-right: 2%;
 }
@@ -194,8 +193,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 36%;
-    border-bottom: 0px solid rgb(11, 231, 231) ;
+    margin-top: 36%; ;
   }
 
   .header h1 {
@@ -204,7 +202,6 @@ h4 {
     font-size: 2.15em;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    border-bottom: 1px solid #0be7e7;
     width: 100%;
   }
 
@@ -232,7 +229,6 @@ h4 {
     padding: 0px;
     text-align: center;
     position: relative;
-    border-bottom: 1px solid #0be7e7;
   }
 
   .navi-icons li {
